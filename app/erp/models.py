@@ -8,7 +8,7 @@ class Category(models.Model):
     name = models.CharField(max_length=150, verbose_name='Nombre', unique=True)
 
     def __str__(self):
-        return str(self.id)
+        return self.name
 
     class Meta:
         verbose_name = 'Categoria'
