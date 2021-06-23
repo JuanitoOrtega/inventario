@@ -1,9 +1,14 @@
 from app.wsgi import *
-from erp.models import Type
+from erp.models import *
 
 # Listar: SELECT * FROM table
 # query = Type.objects.all()
 # print(query)
+print(Category.objects.all())
+
+for i in Category.objects.filter():
+    print(i)
+
 
 # Inserción
 # t = Type()
